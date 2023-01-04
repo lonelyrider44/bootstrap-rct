@@ -1,24 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Alert from './Bootstrap/Alert';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <Alert color={"primary"}>Test <b>test</b></Alert>
+      <Alert color={"secondary"}/>
+      <Alert color={"sucess"}/>
+      <Alert color={"warning"}/>
+      <Alert color={"danger"}/>
+      <Alert />
+
     </div>
+
   );
 }
 
